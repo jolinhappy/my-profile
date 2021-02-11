@@ -176,6 +176,11 @@
         </div>
       </div>
     </div>
+    <!-- footer -->
+    <div class="footer">
+      <div class="copyright-text">文科少女 &copy; 2021</div>
+      <div class="contact">Mail: jolinhappy1990@hotmail.com</div>
+    </div>
   </div>
 </template>
 
@@ -457,6 +462,18 @@ export default class Home extends Vue {}
           }
         }
       }
+    }
+  }
+  .footer {
+    height: 80px;
+    background: gray;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    .copyright-text {
+      margin-top: 20px;
     }
   }
 }
