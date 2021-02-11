@@ -72,6 +72,110 @@
         </div>
       </div>
     </div>
+    <!-- project -->
+    <div class="project">
+      <div class="project-title">文科的作品</div>
+      <div class="project-content">
+        <div class="project-item">
+          <div class="project-photo">
+            <img src="https://picsum.photos/300/300/?random=123" alt="" />
+          </div>
+          <div class="project-detail">
+            <div class="project-item-title">XXXX</div>
+            <div class="project-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+              recusandae expedita dolorum? Error atque repudiandae laudantium
+              ipsum quia voluptatum aspernatur illo doloribus provident,
+              veritatis praesentium corporis molesti
+            </div>
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-photo">
+            <img src="https://picsum.photos/300/300/?random=329" alt="" />
+          </div>
+          <div class="project-detail">
+            <div class="project-item-title">XXXX</div>
+            <div class="project-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+              recusandae expedita dolorum? Error atque repudiandae laudantium
+              ipsum quia voluptatum aspernatur illo doloribus provident,
+              veritatis praesentium corporis molesti
+            </div>
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-photo">
+            <img src="https://picsum.photos/300/300/?random=245" alt="" />
+          </div>
+          <div class="project-detail">
+            <div class="project-item-title">XXXX</div>
+            <div class="project-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+              recusandae expedita dolorum? Error atque repudiandae laudantium
+              ipsum quia voluptatum aspernatur illo doloribus provident,
+              veritatis praesentium corporis molesti
+            </div>
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-photo">
+            <img src="https://picsum.photos/300/300/?random=165" alt="" />
+          </div>
+          <div class="project-detail">
+            <div class="project-item-title">XXXX</div>
+            <div class="project-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+              recusandae expedita dolorum? Error atque repudiandae laudantium
+              ipsum quia voluptatum aspernatur illo doloribus provident,
+              veritatis praesentium corporis molesti
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- experience -->
+    <div class="experience">
+      <div class="experience-title">文科的經歷</div>
+      <div class="experience-content">
+        <div class="experience-item">
+          <div class="experience-bar">
+            <div class="circle"></div>
+            <div class="bar"></div>
+          </div>
+          <div class="experience-detail">
+            <div class="experience-item-title">XXX公司</div>
+            <div class="experience-description">
+              dekowfkopweffkoe wfoko fewfopewkopfkf eowfko
+            </div>
+          </div>
+        </div>
+        <div class="experience-item">
+          <div class="experience-bar">
+            <div class="circle"></div>
+            <div class="bar"></div>
+          </div>
+          <div class="experience-detail">
+            <div class="experience-item-title">XXX公司</div>
+            <div class="experience-description">
+              dekowfkopweffkoe wfoko fewfopewkopfkf eowfko
+            </div>
+          </div>
+        </div>
+        <div class="experience-item">
+          <div class="experience-bar">
+            <div class="circle"></div>
+            <div class="bar"></div>
+          </div>
+          <div class="experience-detail">
+            <div class="experience-item-title">XXX公司</div>
+            <div class="experience-description">
+              dekowfkopweffkoe wfoko fewfope
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -178,15 +282,15 @@ export default class Home extends Vue {}
     }
   }
   .summary {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 80px);
     background: $main-pink;
-    padding-top: 100px;
+    padding-top: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
     .picture {
-      width: 200px;
-      height: 200px;
+      width: 150px;
+      height: 150px;
       margin-bottom: 30px;
       .my-picture {
         border-radius: 50%;
@@ -201,6 +305,7 @@ export default class Home extends Vue {}
     height: auto;
     background: $main-green;
     padding-top: 60px;
+    padding-bottom: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -220,7 +325,7 @@ export default class Home extends Vue {}
       align-items: center;
       margin-top: 25px;
       .skill-card {
-        width: calc(100% - 160px);
+        width: calc(100% - 100px);
         height: 300px;
         background: $main-blue;
         margin: 30px;
@@ -243,6 +348,113 @@ export default class Home extends Vue {}
         .skill-group {
           width: 65%;
           font-size: 25px;
+        }
+      }
+    }
+  }
+  .project {
+    width: 100%;
+    height: auto;
+    background: $main-blue;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .project-title {
+      width: 200px;
+      height: 60px;
+      line-height: 60px;
+      font-size: 30px;
+      font-weight: bold;
+      background: hsl(16, 100%, 66%);
+      text-align: center;
+      border-radius: 20px;
+    }
+    .project-content {
+      margin-top: 25px;
+      .project-item {
+        margin: 30px auto;
+        width: calc(100% - 100px);
+        padding-bottom: 20px;
+        background: $main-green;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .project-photo {
+          width: 180px;
+          height: 180px;
+          margin-top: 20px;
+        }
+        .project-detail {
+          text-align: center;
+          width: 85%;
+          margin-top: 25px;
+          font-size: 20px;
+          .project-item-title {
+            margin-bottom: 10px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+  .experience {
+    width: 100%;
+    height: auto;
+    background: $main-pink;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .experience-title {
+      width: 200px;
+      height: 60px;
+      line-height: 60px;
+      font-size: 30px;
+      font-weight: bold;
+      background: hsl(16, 100%, 66%);
+      text-align: center;
+      border-radius: 20px;
+    }
+    .experience-content {
+      margin: 25px 0;
+      .experience-item {
+        display: flex;
+        width: calc(100% - 100px);
+        margin: 0 auto;
+        .experience-bar {
+          width: 80px;
+          position: relative;
+          .circle {
+            width: 30px;
+            height: 30px;
+            background: crimson;
+            border-radius: 50%;
+            position: absolute;
+          }
+          .bar {
+            height: auto;
+            &::after {
+              content: "";
+              position: absolute;
+              width: 10px;
+              min-height: 200px;
+              background: crimson;
+              left: 10px;
+              top: 5px;
+            }
+          }
+        }
+        .experience-detail {
+          min-height: 200px;
+          .experience-item-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+          }
         }
       }
     }
@@ -276,6 +488,7 @@ export default class Home extends Vue {}
     .summary {
       flex-direction: row;
       justify-content: center;
+      padding-top: 100px;
       .picture {
         width: 200px;
         height: 200px;
@@ -289,11 +502,13 @@ export default class Home extends Vue {}
       }
     }
     .skill {
-      height: calc(100vh - 30px);
+      height: 700px;
       .skill-content {
         flex-direction: row;
+        justify-content: center;
         .skill-card {
-          height: 400px;
+          width: 325px;
+          height: 450px;
           background: $main-blue;
           margin: 30px;
           display: flex;
@@ -317,6 +532,31 @@ export default class Home extends Vue {}
             font-size: 25px;
           }
         }
+      }
+    }
+    .project {
+      .project-content {
+        margin-top: 25px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-items: center;
+        .project-item {
+          margin: 30px auto;
+          width: 460px;
+          padding-bottom: 40px;
+          .project-photo {
+            width: 240px;
+            height: 240px;
+            margin-top: 40px;
+          }
+        }
+      }
+    }
+    .experience {
+      .experience-item {
+        display: flex;
+        max-width: 600px;
+        margin: 0 auto;
       }
     }
   }
