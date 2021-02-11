@@ -45,6 +45,33 @@
         </div>
       </div>
     </div>
+    <!-- skill -->
+    <div class="skill">
+      <div class="skill-title">文科的技能</div>
+      <div class="skill-content">
+        <div class="skill-card">
+          <h3 class="title-text">前端</h3>
+          <ul class="skill-group">
+            <li class="skill-item">HTML</li>
+            <li class="skill-item">css</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3 class="title-text">後端</h3>
+          <ul class="skill-group">
+            <li class="skill-item">HTML</li>
+            <li class="skill-item">css</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3 class="title-text">其他</h3>
+          <ul class="skill-group">
+            <li class="skill-item">HTML</li>
+            <li class="skill-item">css</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -151,9 +178,9 @@ export default class Home extends Vue {}
     }
   }
   .summary {
-    height: 400px;
+    height: calc(100vh - 100px);
     background: $main-pink;
-    padding-top: 40px;
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -166,7 +193,58 @@ export default class Home extends Vue {}
       }
     }
     .text-section {
-      width: calc(100% - 40px);
+      width: calc(100% - 120px);
+    }
+  }
+  .skill {
+    width: 100%;
+    height: auto;
+    background: $main-green;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .skill-title {
+      width: 200px;
+      height: 60px;
+      line-height: 60px;
+      font-size: 30px;
+      font-weight: bold;
+      background: hsl(16, 100%, 66%);
+      text-align: center;
+      border-radius: 20px;
+    }
+    .skill-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 25px;
+      .skill-card {
+        width: calc(100% - 160px);
+        height: 300px;
+        background: $main-blue;
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: scale(1, 1);
+        transition: transform 0.35s ease-out;
+
+        &:hover {
+          transform: scale(1.03, 1.03);
+          color: white;
+          //背景色更改
+        }
+        .title-text {
+          text-align: center;
+          font-size: 25px;
+          margin: 20px 0;
+        }
+        .skill-group {
+          width: 65%;
+          font-size: 25px;
+        }
+      }
     }
   }
 }
@@ -208,6 +286,37 @@ export default class Home extends Vue {}
       }
       .text-section {
         width: 50%;
+      }
+    }
+    .skill {
+      height: calc(100vh - 30px);
+      .skill-content {
+        flex-direction: row;
+        .skill-card {
+          height: 400px;
+          background: $main-blue;
+          margin: 30px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          transform: scale(1, 1);
+          transition: transform 0.35s ease-out;
+
+          &:hover {
+            transform: scale(1.03, 1.03);
+            color: white;
+            //背景色更改
+          }
+          .title-text {
+            text-align: center;
+            font-size: 25px;
+            margin: 20px 0;
+          }
+          .skill-group {
+            width: 65%;
+            font-size: 25px;
+          }
+        }
       }
     }
   }
