@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <!-- navbar -->
     <div class="navbar">
       <div class="navbar-icon">
         <img src="https://picsum.photos/30/30/?random=30" class="icon" alt="" />
@@ -25,6 +26,25 @@
     <label class="navbar-toggle-label" for="toggle-navbar-item">
       <span class="hamburger"></span>
     </label>
+    <!-- summary -->
+    <div class="summary">
+      <div class="picture">
+        <img
+          src="https://picsum.photos/250/250/?random=231"
+          alt=""
+          class="my-picture"
+        />
+      </div>
+      <div class="text-section">
+        <h3 class="name">Phoebe Hsu</h3>
+        <div class="text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis
+          illum recusandae in! In ab consectetur at quia! Similique, quas eius
+          cum odit natus exercitationem voluptatem. Tempore quibusdam eos ad
+          possimus.
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -44,7 +64,7 @@ export default class Home extends Vue {}
 @import "src/scss/style.scss";
 .home {
   width: 100%;
-  height: 100vh;
+  height: auto;
   .navbar-toggle-label {
     position: absolute;
     right: 20px;
@@ -130,6 +150,25 @@ export default class Home extends Vue {}
       }
     }
   }
+  .summary {
+    height: 400px;
+    background: $main-pink;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .picture {
+      width: 200px;
+      height: 200px;
+      margin-bottom: 30px;
+      .my-picture {
+        border-radius: 50%;
+      }
+    }
+    .text-section {
+      width: calc(100% - 40px);
+    }
+  }
 }
 
 @media screen and (min-width: 675px) {
@@ -153,6 +192,22 @@ export default class Home extends Vue {}
           margin: 0 15px;
           line-height: 60px;
         }
+      }
+    }
+    //summary
+    .summary {
+      flex-direction: row;
+      justify-content: center;
+      .picture {
+        width: 200px;
+        height: 200px;
+        margin-right: 30px;
+        .my-picture {
+          border-radius: 50%;
+        }
+      }
+      .text-section {
+        width: 50%;
       }
     }
   }
